@@ -29,6 +29,24 @@ body {
   text-align: center;
   /* margin-bottom: 20px; */
 }
+/* End Header */
+
+/* Footer */
+.footer {
+  bottom: 0;
+  padding: 0;
+  background-color: #013568;
+  color: white;
+  text-align: center;
+  /* padding: 2rem 1rem; */
+  width: 100%; /* Ensure the header spans the entire screen */
+  box-sizing: border-box; /* Include padding in width calculation */
+  position: relative; /* Keep it independent from flexbox layout */
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+/* End Footer */
 
 .main-title {
   /* font-size: 1.5rem; */
@@ -297,6 +315,10 @@ ul.commitments-list li:hover {
   transition: all 0.3s ease-in-out;
 }
 
+.hyperlink:hover {
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
+} 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .column {
