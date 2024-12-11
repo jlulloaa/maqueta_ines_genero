@@ -1,0 +1,313 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f4f4f9; */
+  color: #013568;
+  line-height: 1.5em;
+}
+
+.container-fluid {
+  padding: 0;
+  display: flex; /* Use flex layout for columns */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between; /* Space out columns evenly */
+  gap: 1rem; /* Add spacing between columns */
+}
+
+/* Header */
+.header {
+  margin: 0;
+  padding: 0;
+  background-color: #013568;
+  color: white;
+  text-align: center;
+  /* padding: 2rem 1rem; */
+  width: 100%; /* Ensure the header spans the entire screen */
+  box-sizing: border-box; /* Include padding in width calculation */
+  position: fixed; /* Keep it independent from flexbox layout */
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+.main-title {
+  /* font-size: 1.5rem; */
+  /* VRID .et_pb_text_1 h2 */
+  font-weight: 700;
+  font-size: 32px;
+  color: #013568 !important;
+  text-align: center;
+  line-height: 1.3em;
+  /* End VRID website */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #F88300;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #013568;
+  text-align: center;
+}
+
+h2 {
+  /* VRID et_pb_text_3 h3 */
+  font-weight: 700;
+  font-size: 20px;
+  color: #013568 !important;
+  /* End VRID */
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 100%;
+  margin: 10px 0;
+}
+
+.header img {
+  max-width: 100%;
+}
+
+.infographic {
+  max-width: 30%;
+  margin-top: 100px;
+  margin-left: 50px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.dimensions {
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.dimensions h2 {
+  text-align: left !important;
+}
+
+  
+.dimension {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #013568;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dimension .icon {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #013568;
+}
+
+.dimension p {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0;
+}
+
+.dimension strong {
+  font-size: 1rem;
+  color: #F88300;
+  margin: 0;
+}
+
+
+.chart-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.radar-chart {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Radar Chart */
+.radar-chart img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: block;
+}
+
+.legend-section {
+  margin-top: 20px;
+}
+
+.legend-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: #eef2f9;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.legend-table th, .legend-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.legend-table th {
+  background-color: #013568;
+  color: #fff;
+}
+
+.legend-table .star {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.star.grey {
+  color: #d9d9d9;
+}
+
+.star.orange {
+  color: #f88300;
+}
+
+.info-column {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .section {
+  margin-bottom: 30px;
+} */
+
+/* Milestones Graphs */
+.milestone-chart img {
+  max-width: 90%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  /* padding: 0.5rem; */
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+ul li .icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #f88300;
+}
+
+/* Improvements */
+
+ul.improvement-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.improvement-list li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.improvement-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures even spacing between elements */
+  gap: 15px; /* Adds spacing between image and text */
+}
+
+.improvement-chart {
+  flex: 1 1 50%; /* Takes 50% of the container width */
+}
+
+.improvement-chart img {
+  max-width: 100%; /* Ensures the image scales correctly */
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: block;
+}
+
+.improvement-text {
+  flex: 1 1 50%; /* Takes 50% of the container width */
+  text-align: left;
+}
+/* End Improvements lists */
+
+/* ul.milestones-list li .icon {
+  color: #27a745;
+} */
+
+ul.commitments-list li .icon {
+  color: #007bff;
+}
+
+ul.improvement-list li .icon {
+  color: #ffc107;
+}
+
+ul.commitments-list li:hover {
+  color: #273b87;
+  cursor: pointer;
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .column {
+    max-width: 48%; /* Allow two columns on medium screens */
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    max-width: 100%; /* Stack columns vertically on small screens */
+  }
+}
