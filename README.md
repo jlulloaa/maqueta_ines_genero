@@ -1,5 +1,5 @@
 # Maqueta de visualización de datos Modelo Huella de Género (v0.1)
-Haga click [acá]([https://www.linkedin.com/in/looneymike/](https://jlulloaa.github.io/maqueta_ines_genero/) para acceder a la página de prueba.
+Haga click [acá](https://jlulloaa.github.io/maqueta_ines_genero/) para acceder a la página de prueba.
 
 # Páginas de referencia
 - [Infografía](https://ciencias.uach.cl/wp-content/uploads/2022/09/infografia-huella-de-genero-uach-G-A4-final.pdf) Facultad de Ciencias UACh
