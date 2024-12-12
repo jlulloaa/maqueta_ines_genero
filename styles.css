@@ -35,8 +35,10 @@ body {
 .header img {
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
-  max-width: 1200px; /* Optional: Limit maximum width */
-}/* End Header */
+  max-width: 100%; 
+}
+
+/* End Header */
 
 /* Footer */
 .footer {
@@ -59,8 +61,9 @@ body {
   height: auto; /* Maintain aspect ratio */
   max-width: 1200px; /* Optional: Limit maximum width */
 }
+/* End Header */
 
-/* Responsive Adjustments */
+/* Responsive Adjustments  Header and Footer */
 @media screen and (max-width: 768px) {
   .header img, .footer img {
     max-width: 100%; /* Allow full width on smaller screens */
@@ -73,8 +76,9 @@ body {
     padding: 0.5rem; /* Add padding for better spacing */
   }
 }
-/* End Footer */
+/* End Responsive adjustment Header & Footer */
 
+/* Main Title, heading and general text */
 .main-title {
   /* font-size: 1.5rem; */
   /* VRID .et_pb_text_1 h2 */
@@ -118,11 +122,10 @@ p {
   font-size: 100%;
   margin: 10px 0;
 }
+/* End of text formatting */
 
-.header img {
-  max-width: 100%;
-}
 
+/* Infographic (each column) */
 .infographic {
   max-width: 40%;
   margin-top: 60px;
@@ -131,12 +134,12 @@ p {
   border-radius: 10px;
   padding: 20px;
 }
+/* End of Infographic (each column) */
 
-.description {
-  margin-bottom: 20px;
-  font-size: 1rem;
-  line-height: 1.5;
-}
+
+/* Right Column settings */
+
+/* Dimensions */
 
 .dimensions {
   margin-top: 20px;
@@ -146,7 +149,6 @@ p {
 .dimensions h2 {
   text-align: left !important;
 }
-
   
 .dimension {
   display: flex;
@@ -162,8 +164,13 @@ p {
 .dimension .icon {
   font-size: 2rem;
   margin-right: 15px;
-  color: #013568;
+  color: #013568;    
+  transition: transform 0.8s; /* Animation */
 }
+
+.dimension .icon:hover {
+  transform: scale(1.5);
+  }
 
 .dimension p {
   font-size: 0.8rem;
@@ -176,8 +183,11 @@ p {
   color: #F88300;
   margin: 0;
 }
+/* End of Dimensions */
+/* End Right Column settings */
 
-
+/* Middle Column settings */
+/* Radar Chart image and clickable area */
 .chart-section {
   text-align: center;
   margin: 20px 0;
@@ -192,7 +202,6 @@ p {
   border-radius: 10px;
 }
 
-/* Radar Chart */
 .radar-chart img {
   max-width: 100%;
   height: auto;
@@ -202,7 +211,7 @@ p {
   display: block;
 }
 
-/* popup section */
+/* popup section (clickable area) */
 /* Image popup container styling */
 .image-popup-container {
   display: flex;
@@ -217,7 +226,6 @@ p {
   max-width: 100%; /* Adjusts to container */
   height: auto; /* Maintains aspect ratio */
 }
-
 
 /* Popup styling */
 .popup {
@@ -273,7 +281,6 @@ p {
   }
 }
 
-
 @keyframes zoomOut {
   from {
     transform: scale(1);
@@ -290,13 +297,13 @@ p {
   outline: 2px solid red; 
 } */
 
-
 /* End of popup section */
+/* End of Radar Chart image and clickable area */
 
+/* Legend section */
 .legend-section {
   margin-top: 20px;
 }
-
 
 .legend-table {
   width: 100%;
@@ -336,6 +343,159 @@ p {
 .star.orange {
   color: #f88300;
 }
+/* End of Legend section */
+/* End of Middle Column settings */
+
+
+/* Left Column settings */
+
+/* Generic No-numbered lists */
+ul.generic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.generic-list  li {
+  display: flex;
+  align-items: center;
+  vertical-align:middle;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+ul.generic-list  li .icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #f88300;
+}
+
+
+.hyperlink:hover {
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
+} 
+
+/* End of generic no-numbered lists */
+
+/* Committments Section */
+ul.commitments-list li .icon {
+  color: #007bff;
+}
+ul.commitments-list li {
+  font-size: 0.75rem;
+  box-shadow: none;  
+}
+
+ul.commitments-list li:hover {
+  color: #013568;
+  cursor: pointer; 
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* End of Committments Section */
+
+/* Milestones Section */
+.milestone-chart {
+  transition: transform 0.8s; /* Animation */
+}
+
+.milestone-chart img {
+  max-width: 90%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: block;
+}
+
+.milestone-chart:hover {
+transform: scale(2.0);
+}
+
+ul.milestones-list li {
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: none;  
+}
+/* End of Milestones Section */
+
+
+/* Improvements Section */
+ul.improvement-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul.improvement-list li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+ul.improvement-list li .icon {
+  color: #ffc107;
+}
+
+.improvement-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures even spacing between elements */
+  gap: 15px; /* Adds spacing between image and text */
+}
+
+.improvement-chart {
+  flex: 1 1 50%; /* Takes 50% of the container width */
+  transition: transform 0.8s; /* Animation */
+
+}
+
+.improvement-chart img {
+  max-width: 100%; /* Ensures the image scales correctly */
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: block;
+}
+
+.improvement-chart:hover {
+  transform: scale(2.0);
+  }
+  
+
+.improvement-text {
+  flex: 1 1 50%; /* Takes 50% of the container width */
+  text-align: left;
+}
+/* End Improvements Section */
+
+
+
+/* Bottom area - Additional information and links  */
+/* Links of interest */
+ul.link-of-interest {
+  text-decoration: none;
+}
+ul.links-of-interest li img{
+  color: #007bff;
+  margin-right: 10px;
+}
+
+ul.links-of-interest li {
+  font-size: 0.75rem;
+  box-shadow: none;  
+}
+
+ul.links-of-interest li:hover {
+  color: #013568;
+  cursor: pointer; 
+  transform: translateX(5px);
+  transition: all 0.3s ease-in-out;
+}
+/* End of Links of interest */
 
 .info-column {
   width: 100%;
@@ -348,107 +508,7 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* .section {
-  margin-bottom: 30px;
-} */
 
-/* Milestones Graphs */
-.milestone-chart img {
-  max-width: 90%;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  /* padding: 0.5rem; */
-  display: block;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-ul li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  font-size: 1rem;
-  color: #333;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-
-}
-
-ul li .icon {
-  font-size: 1.5rem;
-  margin-right: 10px;
-  color: #f88300;
-}
-
-/* Improvements */
-
-ul.improvement-list {
-  list-style: none;
-  padding: 0;
-}
-
-ul.improvement-list li {
-  margin-bottom: 15px;
-  font-size: 1rem;
-  color: #333;
-}
-
-.improvement-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Ensures even spacing between elements */
-  gap: 15px; /* Adds spacing between image and text */
-}
-
-.improvement-chart {
-  flex: 1 1 50%; /* Takes 50% of the container width */
-}
-
-.improvement-chart img {
-  max-width: 100%; /* Ensures the image scales correctly */
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  display: block;
-}
-
-.improvement-text {
-  flex: 1 1 50%; /* Takes 50% of the container width */
-  text-align: left;
-}
-/* End Improvements lists */
-
-ul.milestones-list li {
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-ul.commitments-list li .icon {
-  color: #007bff;
-}
-ul.commitments-list li {
-  font-size: 0.75rem;
-}
-
-ul.improvement-list li .icon {
-  color: #ffc107;
-}
-
-ul.commitments-list li:hover {
-  color: #273b87;
-  cursor: pointer;
-  transform: translateX(5px);
-  transition: all 0.3s ease-in-out;
-}
-
-.hyperlink:hover {
-  transform: translateX(5px);
-  transition: all 0.3s ease-in-out;
-} 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .column {
@@ -463,3 +523,4 @@ ul.commitments-list li:hover {
     max-width: 100%; /* Stack columns vertically on small screens */
   }
 }
+

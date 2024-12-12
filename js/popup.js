@@ -51,7 +51,7 @@ document.querySelectorAll('area').forEach(area => {
     // Assume the heptagon center is at the middle of the image
     const centerX = imgWidth / 2;
     const centerY = imgHeight / 2;
-    const radius = 100; // Adjust as necessary
+    const radius = 150; // Adjust as necessary
 
     // Calculate the heptagon vertices
     const vertices = [];
