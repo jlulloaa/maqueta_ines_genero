@@ -200,6 +200,7 @@ p {
   height: auto;
   border: 1px solid #ddd;
   border-radius: 10px;
+  position: relative;
 }
 
 .radar-chart img {
@@ -211,6 +212,7 @@ p {
   display: block;
 }
 
+/* popup section (clickable area) */
 /* popup section (clickable area) */
 /* Image popup container styling */
 .image-popup-container {
@@ -230,35 +232,42 @@ p {
 /* Popup styling */
 .popup {
   display: none; /* Hidden by default */
-  position: absolute;
+  position: absolute; /*Changed to fixed so its shown across all viewport*/
   z-index: 1000;
   left: 0;
-  top: 0;
+  top: 0 !important;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  transition: all 0.3s ease-in-out; /* Smooth transition for fade-in/fade-out effect */
+  opacity: 0; /* Start transparent */
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Ensure clicks pass through when not visible */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.popup.show {
+    display: flex; /*Added display flex for positioning and to start the animation*/
+    opacity: 1; /* Show popup with fade effect */
+    pointer-events: auto;
 }
 
 .popup-content {
   background-color: #fff;
-  margin: 10% auto;
   padding: 20px;
   border-radius: 8px;
-  width: 60%;
   text-align: center;
-  /*transform: scale(0);  Start with scale(0) for zoom-out effect */
+  transform: scale(0); /* Start with scale(0) for zoom-out effect */
   transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+  margin: 20% 20% 50% 20%; /* Adjust as needed */
 }
 
-.popup.show {
-  display: block;
-  opacity: 1; /* Show popup with fade effect */
-}
 
 .popup.show .popup-content {
   transform: scale(1); /* Zoom-in effect */
 }
+
 
 .popup-content .close {
   position: absolute;
@@ -294,7 +303,7 @@ p {
 
 /* Debugging only */
 /* area {
-  outline: 2px solid red; 
+  outline: 2px solid red;
 } */
 
 /* End of popup section */
@@ -356,6 +365,9 @@ ul.generic-list {
   margin: 0;
 }
 
+ul.generic-list p {
+  text-align: center;
+}
 ul.generic-list  li {
   display: flex;
   align-items: center;
@@ -479,6 +491,8 @@ ul.improvement-list li .icon {
 ul.link-of-interest {
   text-decoration: none;
 }
+
+
 ul.links-of-interest li img{
   color: #007bff;
   margin-right: 10px;
