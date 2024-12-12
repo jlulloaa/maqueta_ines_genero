@@ -121,6 +121,7 @@ h3 {
 p {
   font-size: 100%;
   margin: 10px 0;
+  /* text-align: left; */
 }
 /* End of text formatting */
 
@@ -500,9 +501,12 @@ ul.links-of-interest li img{
 
 ul.links-of-interest li {
   font-size: 0.75rem;
-  box-shadow: none;  
+  box-shadow: none;
 }
 
+ul.links-of-interest p{
+  text-align: left;
+}
 ul.links-of-interest li:hover {
   color: #013568;
   cursor: pointer; 
