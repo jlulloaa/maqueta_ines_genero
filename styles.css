@@ -293,6 +293,7 @@ p {
   margin-top: 20px;
 }
 
+
 .legend-table {
   width: 100%;
   border-collapse: collapse;
@@ -300,12 +301,17 @@ p {
   background: #eef2f9;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  table-layout:auto;
 }
 
 .legend-table th, .legend-table td {
   border: 1px solid #ddd;
   text-align: left;
   padding: 8px;
+  max-width: 300px; /* Set maximum width for cells */
+  overflow-wrap: break-word; /* Break long words */
+  word-break: break-word; /* Handle word breaking */
+  word-wrap: break-word; /* For older browsers */
 }
 
 .legend-table th {
